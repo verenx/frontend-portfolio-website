@@ -17,12 +17,6 @@ header {
   margin: 60px 30px;
 }
 
-.profile-picture {
-  width: 350px;
-  border: 1px solid var(--secondary-color);
-  border-radius: 150px;
-}
-
 h1, h2 {
   text-align: center;
 }
@@ -75,6 +69,12 @@ justify-content: center;
   opacity: 0.9;
 }
 
+.profile-picture {
+  width: 350px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 150px;
+}
+
 main {
   margin: 0 60px;
 }
@@ -103,6 +103,12 @@ main {
 
 .work-inquiry-text {
   margin-right: 180px;
+}
+
+.work-inquiry-text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .work-inquiry-button {
