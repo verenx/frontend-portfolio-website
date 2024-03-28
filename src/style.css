@@ -18,7 +18,7 @@ header {
 }
 
 .profile-picture {
-  width: 370px;
+  width: 350px;
   border: 1px solid var(--secondary-color);
   border-radius: 150px;
 }
@@ -71,6 +71,10 @@ justify-content: center;
   font-style: normal;
 }
 
+.button-primary:hover {
+  opacity: 0.9;
+}
+
 main {
   margin: 0 60px;
 }
@@ -87,8 +91,26 @@ main {
   padding: 30px 60px;
   font-size: 24px;;
 }
+
+.work-inquiry {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-color);
+  padding: 30px;
+  margin: 60px;
+  border-radius: 16px;
+}
+
+.work-inquiry-text {
+  margin-right: 180px;
+}
+
+.work-inquiry-button {
+  margin-top: 23px;
+}
+
 footer {
-  margin-top: 60px;
+  margin: 60px 0 30px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -104,7 +126,23 @@ footer {
   color: var(--secondary-color);
 }
 
+.contact-icon:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
 
+.footer-paragraph {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.9;
+}
+
+.footer-paragraph a {
+  color: var(--text-opacity-color);
+}
 
 
 
