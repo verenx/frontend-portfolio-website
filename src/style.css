@@ -1,7 +1,10 @@
 :root {
   --primary-color: #F6F7F0;
   --secondary-color: #252716;
-  --text-opacity-color: #1B1B1B;
+  --text-opacity-color: #242422;
+
+  --heading-font: "Playfair Display", serif;
+  --default-font: "Poppins", sans-serif;
 }
 
 .homepage-container {
@@ -22,24 +25,26 @@ h1, h2 {
 }
 
 h1 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
+  font-family: var(--heading-font);
   font-weight: 700;
-  font-style: normal;
+  font-size: 64px;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
+  color: var(--text-opacity-color);
   font-weight: 600;
-  font-style: normal;
+  font-size: 36px;
 }
 
 .header-paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: 400;
-  font-style: normal;
+  opacity: 0.9;
+  line-height: 30px;
+  font-size: 18px;
   text-align: center;
-  padding: 30px 60px;
+  padding: 30px 60px 0 60px;
 }
 
 .header-links {
@@ -48,8 +53,8 @@ h2 {
 }
 
 .header-buttons {
-display: flex;
-justify-content: center;
+ display: flex;
+ justify-content: center;
 }
 
 .button-primary {
@@ -59,10 +64,9 @@ justify-content: center;
   text-decoration: none;
   border-radius: 8px;
   text-align: center;
-  margin: 30px 30px 60px 0;
-  font-family: "Poppins", sans-serif;
+  margin: 30px 30px 60px 30px;
+  font-family: var(--default-font);
   font-weight: 600;
-  font-style: normal;
 }
 
 .button-primary:hover {
@@ -82,9 +86,10 @@ main {
 .skills-list {
   display: flex;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
+  color: var(--text-opacity-color);
   font-weight: 400;
-  font-style: normal;
+  line-height: 2;
 }
 
 .skill-list {
@@ -106,9 +111,8 @@ main {
 }
 
 .work-inquiry-text p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: 400;
-  font-style: normal;
 }
 
 .work-inquiry-button {
@@ -117,9 +121,8 @@ main {
 
 footer {
   margin: 60px 0 30px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: 500;
-  font-style: normal;
 }
 
 .contact-icons {
@@ -140,14 +143,32 @@ footer {
 .footer-paragraph {
   margin-top: 30px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--default-font);
   font-weight: 400;
-  font-style: normal;
   opacity: 0.9;
 }
 
 .footer-paragraph a {
   color: var(--text-opacity-color);
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .header-paragraph {
+    font-size: 14px;
+  }
+
+  .button-primary {
+    padding: 15px 25px;
+    margin: 10px 10px 30px 10px;
+  }
 }
 
 
@@ -172,7 +193,7 @@ footer {
   font-weight: 400;
   font-style: normal;
 }
-
+#1B1B1B;
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
