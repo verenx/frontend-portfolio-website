@@ -7,8 +7,13 @@
   --default-font: "Poppins", sans-serif;
 }
 
+body {
+  font-family: var(--default-font);
+}
+
 .homepage-container {
   background-color: var(--primary-color);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar-logo {
@@ -16,11 +21,16 @@
   margin: 0 0 0 20px;
 }
 
+.nav-link-custom {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
 header {
   margin: 60px 30px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -31,23 +41,23 @@ h1 {
 }
 
 h2 {
-  font-family: var(--default-font);
   color: var(--text-opacity-color);
   font-weight: 600;
   font-size: 36px;
 }
 
-.h2-start {
-  text-align: start;
-}
-
-.header-paragraph {
-  font-family: var(--default-font);
+p {
   font-weight: 400;
   opacity: 0.9;
   line-height: 30px;
   font-size: 18px;
-  text-align: center;
+}
+
+.heading-start {
+  text-align: start;
+}
+
+.header-paragraph {
   padding: 30px 60px 0 60px;
 }
 
@@ -56,9 +66,17 @@ h2 {
   color: var(--text-opacity-color)
 }
 
-.header-buttons {
+.header-links:hover {
+  opacity: 0.9;
+}
+
+.header-buttons-container {
  display: flex;
  justify-content: center;
+}
+
+.header-button{
+  margin: 30px 30px 60px 30px;
 }
 
 .button-primary {
@@ -67,9 +85,6 @@ h2 {
   color: white;
   text-decoration: none;
   border-radius: 8px;
-  text-align: center;
-  margin: 30px 30px 60px 30px;
-  font-family: var(--default-font);
   font-weight: 600;
 }
 
@@ -99,7 +114,6 @@ main {
 .skills-list {
   display: flex;
   justify-content: center;
-  font-family: var(--default-font);
   color: var(--text-opacity-color);
   font-weight: 400;
   line-height: 2;
@@ -107,7 +121,7 @@ main {
 
 .skill-list {
   padding: 30px 60px;
-  font-size: 24px;;
+  font-size: 20px;
 }
 
 .work-inquiry {
@@ -117,15 +131,11 @@ main {
   padding: 30px;
   margin: 60px;
   border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .work-inquiry-text {
   margin-right: 180px;
-}
-
-.work-inquiry-text p {
-  font-family: var(--default-font);
-  font-weight: 400;
 }
 
 .work-inquiry-button {
@@ -134,7 +144,6 @@ main {
 
 footer {
   margin: 60px 0 30px 0;
-  font-family: var(--default-font);
   font-weight: 500;
 }
 
@@ -156,8 +165,6 @@ footer {
 .footer-paragraph {
   margin-top: 30px;
   text-align: center;
-  font-family: var(--default-font);
-  font-weight: 400;
   opacity: 0.9;
 }
 
@@ -165,27 +172,33 @@ footer {
   color: var(--text-opacity-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   header {
     margin: 60px 0;
   }
   
   h1 {
     font-size: 38px;
+    text-align: center;
   }
 
   h2 {
     font-size: 20px;
+    text-align: center;
   }
 
   .header-paragraph {
     font-size: 14px;
     padding: 10px 30px;
+    text-align: center;
+  }
+
+  .header-buttons {
+    margin: 10px 10px 30px 10px;
   }
 
   .button-primary {
     padding: 15px 25px;
-    margin: 10px 10px 30px 10px;
     font-size: 14px;
   }
 
@@ -234,6 +247,29 @@ footer {
     font-size: 10px;
     padding: 0 20px;
   }
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary-color);
+  margin-bottom: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about-picture {
+  width: 80%;
+  margin: 20px;
+  border-radius: 2px;
+}
+
+.about-text-container {
+  padding: 20px 60px 20px 0;;
+}
+
+.about p {
+  margin-top: 30px;
 }
 
 
