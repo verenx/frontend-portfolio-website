@@ -5,6 +5,8 @@
 
   --heading-font: "Playfair Display", serif;
   --default-font: "Poppins", sans-serif;
+
+  --default-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 body {
@@ -305,9 +307,27 @@ footer {
   }
 }
 
-.card-custom {
-  margin: 20px;
+.portfolio-container {
+  margin: 60px 40px;
 }
+
+.card-custom {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+  box-shadow: var(--default-box-shadow);
+  border-radius: 10px;
+}
+
+
+.card-image-custom {
+  max-width: 350px;
+  max-height: 250px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+
 
 
 
