@@ -13,6 +13,10 @@ body {
   font-family: var(--default-font);
 }
 
+.page-container {
+  margin: 60px 40px;
+}
+
 .homepage-container {
   background-color: var(--primary-color);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -182,7 +186,7 @@ footer {
 
 
 
-.about {
+.content {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--primary-color);
@@ -190,26 +194,26 @@ footer {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.about-picture {
+.content-picture {
   margin-top: 30px;
   margin-left: 10px;
   border-radius: 8px;
   object-fit: cover;
 }
 
-.about-text-container {
+.content-text-container {
   padding: 20px 60px 60px 40px;
 }
 
-.about p {
+.content-paragraph {
   margin-top: 15 px;
 }
 
-.about p a {
+.content p a {
   color: var(--secondary-color);
 }
 
-.about p a:hover {
+.content p a:hover {
   opacity: 0.9;
 }
 
@@ -296,20 +300,22 @@ footer {
   }
 
 
-  .about-text-container p {
+  .content-text-container p {
     font-size: 12px;
     line-height: 2;
   }
 
-  .about-text-container {
+  .content-text-container {
     padding: 20px 20px 60px 20px;
     text-align: justify;
   }
+
+  .contact-container a {
+    font-size: 12px;
+  }
 }
 
-.portfolio-container {
-  margin: 60px 40px;
-}
+
 
 .card-custom {
   background-color: var(--primary-color);
@@ -327,6 +333,25 @@ footer {
   margin: 10px auto;
   border-radius: 10px;
   border: 1px solid var(--secondary-color);
+}
+
+.contact-container {
+  display: block;
+  max-width: 60%;
+  margin: 30px auto;
+  background-color: var(--primary-color);
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.contact-container a {
+  color: var(--text-opacity-color);
+  text-decoration: none;
+}
+
+.contact-container a:hover {
+  opacity: 0.9;
+  transform: scale(4);
 }
 
 
