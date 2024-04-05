@@ -316,15 +316,17 @@ footer {
   border: var(--primary-color);
   box-shadow: var(--default-box-shadow);
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 
 .card-image-custom {
-  max-width: 350px;
-  max-height: 250px;
+  width: 300px;
+  height: 200px;
   display: block;
   margin: 10px auto;
   border-radius: 10px;
+  border: 1px solid var(--secondary-color);
 }
 
 
