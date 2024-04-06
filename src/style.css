@@ -124,21 +124,20 @@ main h2 {
   text-align: start;
 }
 
-.skills-list {
-  display: flex;
-  justify-content: center;
+.skills-list-container {
   background-color: var(--secondary-color);
   border-radius: 10px;
   box-shadow: --var(--default-box-shadow);
 }
 
-.skills-list h2 {
+.skills-list-container h2 {
   color: white;
-  padding: 10px 0 0 10px;
+  padding: 20px 0 15px 60px;
 }
 
-.skill-list {
-  padding: 30px 60px;
+.skills-list {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .skill-list li {
@@ -172,22 +171,29 @@ footer {
   font-weight: 500;
 }
 
-.contact-icons {
+footer .contact-icons {
   display: flex;
   justify-content: center;
 }
 
-.contact-icon {
-  margin: 30px 30px;
+footer .contact-icons a, .contact-container a .contact-icon {
+  margin: 0 30px 0 30px;
+  padding: 12px 20px;
+  border-radius: 50%;
   color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-size: 30px;
+  transition: all 100ms ease-in-out;
 }
 
-.contact-icon:hover {
+footer .contact-icons a:hover {
   cursor: pointer;
   opacity: 0.9;
+  color: white;
+  background-color: var(--secondary-color);
 }
 
-.footer-paragraph {
+footer p {
   margin-top: 30px;
   text-align: center;
   opacity: 0.9;
@@ -250,29 +256,28 @@ footer {
   border: 1px solid var(--secondary-color);
 }
 
+body.contact-page {
+  background-color: var(--primary-color);
+}
+
 .contact-container {
   display: block;
   max-width: 100%;
   margin: 60px auto;
   background-color: var(--secondary-color);
-  color: white;
-  padding: 20px 30px 80px 30px;
+  color: var(--primary-color);
+  padding: 30px 30px 100px 30px;
 }
 
-.contact-container h3 {
-  font-weight: 100;
-}
-
-.contact-container a {
-  color: white;
+.contact-container a.social-links {
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 28px;
   font-weight: 900;
 }
 
-.contact-container a:hover {
+.contact-container a.social-links:hover {
   opacity: 0.9;
-  transform: scale(4);
 }
 
 .contact-container a span {
@@ -321,12 +326,14 @@ footer {
   .skills-list {
     display: flex;
     justify-content: center;
-    
   }
   
   .skill-list {
-    padding: 20px 0;
-    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .skill-list li {
+    font-size: 10px;
   }
 
   .work-inquiry {
@@ -351,20 +358,17 @@ footer {
     text-align: center;
   }
 
- .contact-icons {
-  background-color: var(--primary-color);
- }
- 
-
-  .contact-icon {
-    margin: 0 15px 20px 15px;
+  footer .contact-icons a {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0 5px;
   }
+
 
   .footer-paragraph {
     font-size: 10px;
     padding: 0 20px;
   }
-
 
   .content-text-container p {
     font-size: 12px;
