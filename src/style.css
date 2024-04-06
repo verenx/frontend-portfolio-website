@@ -119,16 +119,33 @@ main {
   margin: 0 60px;
 }
 
+main h2 {
+  color: black;
+  text-align: start;
+}
+
 .skills-list {
   display: flex;
   justify-content: center;
-  color: var(--text-opacity-color);
-  font-weight: 400;
-  line-height: 2;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: --var(--default-box-shadow);
+}
+
+.skills-list h2 {
+  color: white;
+  padding: 10px 0 0 10px;
 }
 
 .skill-list {
   padding: 30px 60px;
+}
+
+.skill-list li {
+  list-style: none;
+  color: white;
+  font-weight: 800;
+  line-height: 2;
   font-size: 20px;
 }
 
@@ -151,7 +168,7 @@ main {
 }
 
 footer {
-  margin: 60px 0 30px 0;
+  margin: 150px 0 30px 0;
   font-weight: 500;
 }
 
@@ -184,8 +201,6 @@ footer {
   opacity: 0.9;
 }
 
-
-
 .content {
   display: flex;
   justify-content: space-evenly;
@@ -217,6 +232,52 @@ footer {
   opacity: 0.9;
 }
 
+.card-custom {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+  box-shadow: var(--default-box-shadow);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+.card-image-custom {
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
+
+.contact-container {
+  display: block;
+  max-width: 100%;
+  margin: 60px auto;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px 30px 80px 30px;
+}
+
+.contact-container h3 {
+  font-weight: 100;
+}
+
+.contact-container a {
+  color: white;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.contact-container a:hover {
+  opacity: 0.9;
+  transform: scale(4);
+}
+
+.contact-container a span {
+ padding-left: 11px;
+}
 
 @media (max-width: 768px) {
   header {
@@ -290,6 +351,11 @@ footer {
     text-align: center;
   }
 
+ .contact-icons {
+  background-color: var(--primary-color);
+ }
+ 
+
   .contact-icon {
     margin: 0 15px 20px 15px;
   }
@@ -315,44 +381,6 @@ footer {
   }
 }
 
-
-
-.card-custom {
-  background-color: var(--primary-color);
-  border: var(--primary-color);
-  box-shadow: var(--default-box-shadow);
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-
-
-.card-image-custom {
-  width: 300px;
-  height: 200px;
-  display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  border: 1px solid var(--secondary-color);
-}
-
-.contact-container {
-  display: block;
-  max-width: 60%;
-  margin: 30px auto;
-  background-color: var(--primary-color);
-  padding: 20px 30px;
-  border-radius: 10px;
-}
-
-.contact-container a {
-  color: var(--text-opacity-color);
-  text-decoration: none;
-}
-
-.contact-container a:hover {
-  opacity: 0.9;
-  transform: scale(4);
-}
 
 
 
