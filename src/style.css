@@ -125,6 +125,7 @@ main h2 {
   border-radius: 10px;
   box-shadow: --var(--default-box-shadow);
   padding-bottom: 35px;
+  padding-right: 20px;
 }
 
 .skills-list-container h2 {
@@ -379,6 +380,11 @@ body.contact-page {
 
   .contact-container a {
     font-size: 12px;
+  }
+
+  .contact-container a.social-links {
+    font-size: 18px;
+    font-weight: 800;
   }
 }
 
