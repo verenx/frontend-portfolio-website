@@ -56,6 +56,13 @@ p {
   font-size: 18px;
 }
 
+.grid-container {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 .heading-start {
   text-align: start;
 }
